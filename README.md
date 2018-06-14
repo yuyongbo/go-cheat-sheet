@@ -303,54 +303,54 @@ func main() {
 ### 循环
 
 ```go
-    // 这里只有for，没有while，until
-    for i := 1; i < 10; i++ {
-    }
-    for ; i < 10;  { // while - 循环
-    }
-    for i < 10  { // 如果只有一个条件的话可以省略分号；
-    }
-    for { // 可以省略条件 ~ while (true)
-    }
+// 这里只有for，没有while，until
+for i := 1; i < 10; i++ {
+}
+for ; i < 10;  { // while - 循环
+}
+for i < 10  { // 如果只有一个条件的话可以省略分号；
+}
+for { // 可以省略条件 ~ while (true)
+}
 ```
 
 ### Switch
 
 ```go
-    // switch 语句
-    switch operatingSystem {
-    case "darwin":
-        fmt.Println("Mac OS Hipster")
-        // cases会自动break, 而不是通过defaultbreak
-    case "linux":
-        fmt.Println("Linux Geek")
-    default:
-        // Windows, BSD, ...
-        fmt.Println("Other")
-    }
+// switch 语句
+switch operatingSystem {
+case "darwin":
+    fmt.Println("Mac OS Hipster")
+    // cases会自动break, 而不是通过defaultbreak
+case "linux":
+    fmt.Println("Linux Geek")
+default:
+    // Windows, BSD, ...
+    fmt.Println("Other")
+}
 
-    // 与for和if一样，可以在switch值之前加一个赋值语句
-    switch os := runtime.GOOS; os {
-    case "darwin": ...
-    }
+// 与for和if一样，可以在switch值之前加一个赋值语句
+switch os := runtime.GOOS; os {
+case "darwin": ...
+}
 
-    // 可以在 switch cases中做比较
-    number := 42
-    switch {
-        case number < 42:
-            fmt.Println("Smaller")
-        case number == 42:
-            fmt.Println("Equal")
-        case number > 42:
-            fmt.Println("Greater")
-    }
-    
-    // 在case列表中可以用多个用逗号分隔
-    var char byte = '?'
-    switch char {
-        case ' ', '?', '&', '=', '#', '+', '%':
-            fmt.Println("Should escape")
-    }    
+// 可以在 switch cases中做比较
+number := 42
+switch {
+    case number < 42:
+        fmt.Println("Smaller")
+    case number == 42:
+        fmt.Println("Equal")
+    case number > 42:
+        fmt.Println("Greater")
+}
+
+// 在case列表中可以用多个用逗号分隔
+var char byte = '?'
+switch char {
+    case ' ', '?', '&', '=', '#', '+', '%':
+        fmt.Println("Should escape")
+}    
 ```
 
 ## 数组、切片、范围 
