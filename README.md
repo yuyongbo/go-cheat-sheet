@@ -33,10 +33,10 @@
 16. [并发](#并发)
     - [协程](#协程)
     - [通道](#通道)
-    - [通道原理](#channel 的原理)
+    - [通道原理](#channel的原理)
 17. [打印输出](#打印)
 18. [代码片段](#代码片段)
-    - [HTTP服务器](#HTTP 服务器)
+    - [HTTP服务器](#HTTP服务器)
 
 
 
@@ -627,7 +627,7 @@ func doStuff(channelOut, channelIn chan int) {
 }
 ```
 
-### Channel 的原理
+### Channel的原理
 
 - 给一个nil的channel发送永远会阻塞
 
@@ -687,7 +687,7 @@ hellomsg := `
 
 # 代码片段
 
-## HTTP 服务器
+## HTTP服务器
 
 ```go
 package main
